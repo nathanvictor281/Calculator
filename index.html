@@ -8,32 +8,48 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f1f1f1;
         }
 
         #calculator-container {
             display: inline-block;
             text-align: left;
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
-            border: 2px solid #333;
+            background-color: #333;
             border-radius: 10px;
-        }
-
-        .button {
-            font-size: 20px;
-            width: 60px;
-            height: 40px;
-            margin: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            color: white;
         }
 
         input[type="text"] {
-            font-size: 20px;
-            width: 170px;
+            font-size: 36px;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button {
+            font-size: 28px;
+            width: 60px;
+            height: 60px;
             margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #777;
         }
 
         #result {
-            font-size: 24px;
+            font-size: 36px;
             margin-top: 10px;
         }
     </style>
